@@ -13,6 +13,8 @@ let availableQuesions = [];
 let questions = [];
 var bflat = new Audio();
 bflat.src = "ButtonSFX.mp3";
+var audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
 function PlaySound() {
     bflat.play();
 }
@@ -30,7 +32,7 @@ fetch('questions.json')
 
 //CONSTANTS
 var CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 15;
+const MAX_QUESTIONS = 20;
 var secondsLabel = document.getElementById("timer");
 var totalSeconds = 30;
         setInterval(setTime, 1000);
